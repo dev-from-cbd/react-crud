@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div>
       {/* Navigation bar with Bootstrap classes */}
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           {/* Brand name with a link */}
           <a class="navbar-brand" href="#">
