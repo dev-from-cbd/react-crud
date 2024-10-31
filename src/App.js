@@ -14,6 +14,7 @@ function App() {
     <div className="App">
       {/* Rendering the Navbar component inside the App */}
       <Navbar />
+      <Home />
     </div>
   );
 }
