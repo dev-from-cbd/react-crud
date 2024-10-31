@@ -1,35 +1,42 @@
-import React from "react";
+import React from "react"; // Import the React library
 
+// Export the Home component as the default export
 export default function Home() {
   return (
+    // Container div with a Bootstrap class for centering and spacing
     <div className="container">
+      {/* A div with padding, using Bootstrap's py-4 class for vertical spacing */}
       <div className="py-4">
+        {/* Create a table using Bootstrap's table class for styling */}
         <table class="table">
+          {/* Table head that contains the column names */}
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              {/* Column headers with scope attribute for accessibility */}
+              <th scope="col">#</th> {/* Column header for row numbers */}
+              <th scope="col">First</th> {/* Column header for first name */}
+              <th scope="col">Last</th> {/* Column header for last name */}
+              <th scope="col">Handle</th> {/* Column header for social media handle */}
             </tr>
           </thead>
+          {/* Table body containing the actual data rows */}
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <th scope="row">1</th> {/* Row number 1 */}
+              <td>Mark</td> {/* First name of the first row */}
+              <td>Otto</td> {/* Last name of the first row */}
+              <td>@mdo</td> {/* Handle of the first row */}
             </tr>
             <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <th scope="row">2</th> {/* Row number 2 */}
+              <td>Jacob</td> {/* First name of the second row */}
+              <td>Thornton</td> {/* Last name of the second row */}
+              <td>@fat</td> {/* Handle of the second row */}
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
+              <th scope="row">3</th> {/* Row number 3 */}
+              <td colspan="2">Larry the Bird</td> {/* Name of the third row spanning two columns */}
+              <td>@twitter</td> {/* Handle of the third row */}
             </tr>
           </tbody>
         </table>
