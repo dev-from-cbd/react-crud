@@ -6,6 +6,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 // Importing the Navbar component from the layout directory.
 import Navbar from "./layout/Navbar";
+import Home from "./pages/Home";
 
 // Defining the main App component.
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       {/* Rendering the Navbar component inside the App */}
       <Navbar />
+      {/* Rendering the Home component inside the App */}
       <Home />
     </div>
   );
