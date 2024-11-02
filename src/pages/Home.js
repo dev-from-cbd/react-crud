@@ -35,7 +35,9 @@ export default function Home() {
             </tr>
             <tr>
               <th scope="row">3</th> {/* Row number 3 */}
-              <td colspan="2">Larry the Bird</td> {/* Name of the third row spanning two columns */}
+              <td>John</td> {/* First name of the second row */}
+              <td>Doe</td> {/* Last name of the second row */}
+              {/*<td colspan="2">Larry the Bird</td> Name of the third row spanning two columns */}
               <td>@twitter</td> {/* Handle of the third row */}
             </tr>
           </tbody>
