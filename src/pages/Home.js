@@ -8,7 +8,7 @@ export default function Home() {
       {/* A div with padding, using Bootstrap's py-4 class for vertical spacing */}
       <div className="py-4">
         {/* Create a table using Bootstrap's table class for styling */}
-        <table class="table">
+        <table className="table border">
           {/* Table head that contains the column names */}
           <thead>
             <tr>
@@ -16,14 +16,15 @@ export default function Home() {
               <th scope="col">#</th> {/* Column header for row numbers */}
               <th scope="col">First</th> {/* Column header for first name */}
               <th scope="col">Last</th> {/* Column header for last name */}
-              <th scope="col">Handle</th> {/* Column header for social media handle */}
+              <th scope="col">Handle</th>{" "}
+              {/* Column header for social media handle */}
             </tr>
           </thead>
           {/* Table body containing the actual data rows */}
           <tbody>
             <tr>
               <th scope="row">1</th> {/* Row number 1 */}
-              <td>Mark</td> {/* First name of the first row */}
+              <td>Markus</td> {/* First name of the first row */}
               <td>Otto</td> {/* Last name of the first row */}
               <td>@mdo</td> {/* Handle of the first row */}
             </tr>
