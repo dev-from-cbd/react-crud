@@ -8,7 +8,7 @@ export default function Home() {
       {/* A div with padding, using Bootstrap's py-4 class for vertical spacing */}
       <div className="py-4">
         {/* Create a table using Bootstrap's table class for styling */}
-        <table className="table border">
+        <table className="table border shadow">
           {/* Table head that contains the column names */}
           <thead>
             <tr>
