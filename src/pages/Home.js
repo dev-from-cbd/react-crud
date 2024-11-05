@@ -1,4 +1,5 @@
 import React from "react"; // Import the React library
+import axios from "axios";
 
 // Export the Home component as the default export
 export default function Home() {
