@@ -1,8 +1,10 @@
-import React from "react"; // Import the React library
+import React, { useState } from "react"; // Import the React library
 import axios from "axios";
 
 // Export the Home component as the default export
 export default function Home() {
+  const [users, setUsers] = useState();
+
   return (
     // Container div with a Bootstrap class for centering and spacing
     <div className="container">
