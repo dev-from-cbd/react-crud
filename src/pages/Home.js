@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Export the Home component as the default export
 export default function Home() {
-  const [users, setUsers] = useState();
+  const [users, setUsers] = useState([]);
 
   return (
     // Container div with a Bootstrap class for centering and spacing
