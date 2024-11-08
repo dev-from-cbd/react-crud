@@ -5,6 +5,10 @@ import axios from "axios";
 export default function Home() {
   const [users, setUsers] = useState([]);
 
+  useEffect(() => {
+    
+  });
+
   return (
     // Container div with a Bootstrap class for centering and spacing
     <div className="container">
