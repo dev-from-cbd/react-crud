@@ -6,7 +6,7 @@ export default function Home() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    
+    console.log("Full Stack Spring Boot and React CRUD");
   });
 
   return (
