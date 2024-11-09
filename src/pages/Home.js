@@ -1,4 +1,4 @@
-import React, { useState } from "react"; // Import the React library
+import React, { useState, useEffect } from "react"; // Import the React library
 import axios from "axios";
 
 // Export the Home component as the default export
