@@ -6,8 +6,12 @@ export default function Home() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    console.log("Full Stack Spring Boot and React CRUD");
+
   });
+
+  const loadUsers = () => {
+  
+  };
 
   return (
     // Container div with a Bootstrap class for centering and spacing
