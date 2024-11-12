@@ -6,7 +6,9 @@ export default function Home() {
 
   useEffect(() => {});
 
-  const loadUsers = () => {};
+  const loadUsers = () => {
+    const result = axios.get("");
+  };
 
   return (
     <div className="container">
