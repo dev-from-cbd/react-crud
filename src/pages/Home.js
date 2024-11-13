@@ -6,8 +6,8 @@ export default function Home() {
 
   useEffect(() => {});
 
-  const loadUsers = () => {
-    const result = axios.get("");
+  const loadUsers = async () => {
+    const result = await axios.get("http://localhost:3000/users");
   };
 
   return (
