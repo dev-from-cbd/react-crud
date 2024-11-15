@@ -4,11 +4,13 @@ import axios from "axios";
 export default function Home() {
   const [users, setUsers] = useState([]);
 
-  useEffect(() => {});
+  useEffect(() => {
+    loadUsers;
+  });
 
   const loadUsers = async () => {
     const result = await axios.get("http://localhost:3000/users");
-    setUsers(result.data);
+    console.log(result); //setUsers(result.data);
   };
 
   return (
