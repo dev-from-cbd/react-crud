@@ -6,11 +6,11 @@ export default function Home() {
 
   useEffect(() => {
     loadUsers();
-  },[]);
+  }, []);
 
   const loadUsers = async () => {
     const result = await axios.get("http://localhost:3000/users");
-    console.log(result); //setUsers(result.data);
+    setUsers(result.data);
   };
 
   return (
