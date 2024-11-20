@@ -9,7 +9,9 @@ export default function Home() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("http://localhost:3000/users");
+    const result = await axios.get(
+      process.env.REACT_APP_API_URL || "http://localhost:3000/users"
+    );
     setUsers(result.data);
   };
 
