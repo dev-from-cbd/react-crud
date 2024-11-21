@@ -28,8 +28,11 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
+            {
+              users.map()
+            }
             <tr>
-              <th scope="row">3</th>
+              <th scope="row">1</th>
               <td>John</td>
               <td>Doe</td>
               <td>@twitter</td>
