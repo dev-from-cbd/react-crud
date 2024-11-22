@@ -28,15 +28,14 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
-            {
-              users.map()
-            }
-            <tr>
-              <th scope="row">1</th>
-              <td>John</td>
-              <td>Doe</td>
-              <td>@twitter</td>
-            </tr>
+            {users.map((user, index) => (
+              <tr key={index}>
+                <th scope="row">1</th>
+                <td>John</td>
+                <td>Doe</td>
+                <td>@twitter</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
