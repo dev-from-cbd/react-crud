@@ -29,11 +29,13 @@ export default function Home() {
           </thead>
           <tbody>
             {users.map((user, index) => (
-              <tr key={index}>
-                <th scope="row">1</th>
-                <td>John</td>
-                <td>Doe</td>
-                <td>@twitter</td>
+              <tr>
+                <th scope="row" key={index}>
+                  {index + 1}
+                </th>
+                <td>{user.name}</td>
+                <td>{user.username}</td>
+                <td>{user.email}</td>
               </tr>
             ))}
           </tbody>
