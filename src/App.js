@@ -7,8 +7,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Home />
+      <Router>
+        <Navbar />
+        <Home />
+      </Router>
     </div>
   );
 }
