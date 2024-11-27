@@ -10,6 +10,10 @@ function App() {
       <Router>
         <Navbar />
         <Home />
+
+        <Routes>
+          <Route exact path="/" />
+        </Routes>
       </Router>
     </div>
   );
