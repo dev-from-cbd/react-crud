@@ -10,6 +10,7 @@ export default function AddUser() {
             <label htmlFor="Name" className="form-label">
               Name
             </label>
+            <input type={text} className="form-control" />
           </div>
         </div>
       </div>
