@@ -65,8 +65,8 @@ export default function AddUser() {
                 onChange={handleChange}
               />
             </div>
-            <button type="submit" className="btn btn-primary w-100">
-              Register
+            <button type="submit" className="btn btn-outline-primary">
+              Submit
             </button>
           </form>
         </div>
