@@ -7,6 +7,8 @@ export default function AddUser() {
     email: "",
   });
 
+  const { name, username, email } = user;
+
   return (
     <div className="container">
       <div className="row">
