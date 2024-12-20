@@ -9,6 +9,15 @@ export default function AddUser() {
 
   const { name, username, email } = user;
 
+  const handleChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(user); // Logic for submitting data
+  };
+
   return (
     <div className="container">
       <div className="row">
@@ -24,8 +33,7 @@ export default function AddUser() {
                 className="form-control"
                 placeholder="Enter your name"
                 name="name"
-                id="name"
-                value={formData.name}
+                value={name}
                 onChange={handleChange}
               />
             </div>
@@ -38,8 +46,7 @@ export default function AddUser() {
                 className="form-control"
                 placeholder="Enter your Username"
                 name="username"
-                id="username"
-                value={formData.username}
+                value={username}
                 onChange={handleChange}
               />
             </div>
@@ -52,15 +59,14 @@ export default function AddUser() {
                 className="form-control"
                 placeholder="Enter your Email Address"
                 name="email"
-                id="email"
-                value={formData.email}
+                value={email}
                 onChange={handleChange}
               />
             </div>
             <button type="submit" className="btn btn-outline-primary">
               Submit
             </button>
-            <button type="submit" className="btn btn-outline-danger mx-2">
+            <button type="button" className="btn btn-outline-danger mx-2">
               Cancel
             </button>
           </form>
