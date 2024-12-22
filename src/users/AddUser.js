@@ -13,7 +13,7 @@ export default function AddUser() {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = async(e) => {
     e.preventDefault();
   };
 
