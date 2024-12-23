@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 
 export default function AddUser() {
@@ -13,8 +14,9 @@ export default function AddUser() {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
-  const onSubmit = async(e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
+    await axios.post;
   };
 
   return (
