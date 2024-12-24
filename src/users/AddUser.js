@@ -16,7 +16,7 @@ export default function AddUser() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await axios.post;
+    await axios.post("http://localhost:8080/user", user);
   };
 
   return (
@@ -35,7 +35,7 @@ export default function AddUser() {
                 placeholder="Enter your name"
                 name="name"
                 value={name}
-                onChange={(e) => onInputChange()}
+                onChange={(e) => onInputChange(e)}
               />
             </div>
             <div className="mb-3">
@@ -48,6 +48,7 @@ export default function AddUser() {
                 placeholder="Enter your Username"
                 name="username"
                 value={username}
+                onChange={(e) => onInputChange(e)}
               />
             </div>
             <div className="mb-3">
@@ -60,6 +61,7 @@ export default function AddUser() {
                 placeholder="Enter your Email Address"
                 name="email"
                 value={email}
+                onChange={(e) => onInputChange(e)}
               />
             </div>
             <button className="btn btn-outline-primary">Submit</button>
