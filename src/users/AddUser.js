@@ -2,6 +2,8 @@ import axios from "axios";
 import React, { useState } from "react";
 
 export default function AddUser() {
+  let navigate = useNavigate;
+
   const [user, setUser] = useState({
     name: "",
     username: "",
