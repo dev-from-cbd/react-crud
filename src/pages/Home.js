@@ -39,8 +39,8 @@ export default function Home() {
                 <td>
                   <button className="btn btn-primary mx-2">View</button>
                   <Link
-                    to={`/edit/${user.id}`}
                     className="btn btn-outline-primary mx-2"
+                    to={`/edituser/${user.id}`}
                   >
                     Edit
                   </Link>
