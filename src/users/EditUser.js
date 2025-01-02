@@ -5,6 +5,8 @@ import { Link, useNavigate } from "react-router-dom";
 export default function EditUser() {
   let navigate = useNavigate();
 
+  const {id} = useParams();
+
   const [user, setUser] = useState({
     name: "",
     username: "",
