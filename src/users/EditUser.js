@@ -1,11 +1,11 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 export default function EditUser() {
   let navigate = useNavigate();
 
-  const {id} = useParams();
+  const { id } = useParams();
 
   const [user, setUser] = useState({
     name: "",
