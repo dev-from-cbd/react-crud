@@ -14,6 +14,8 @@ export default function Home() {
     setUsers(result.data);
   };
 
+  const deleteUser = async (id) => {};
+
   return (
     <div className="container">
       <div className="py-4">

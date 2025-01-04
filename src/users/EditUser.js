@@ -27,6 +27,7 @@ export default function EditUser() {
 
   const loadUsers = async () => {
     const result = await axios.get(`http://localhost:8080/user/${id}`);
+    setUser(result.data);
   };
 
   return (
