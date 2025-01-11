@@ -10,7 +10,9 @@ export default function ViewUser() {
             <div className="card-header">
               Details of User ID:
               <ul className="list-group list-group-flush">
-                <li className="list-group-item">Name: </li>
+                <li className="list-group-item">
+                  <b>Name:</b>
+                </li>
                 <li className="list-group-item">Username: </li>
                 <li className="list-group-item">Email: </li>
                 <li className="list-group-item">Phone: </li>
