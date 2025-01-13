@@ -19,12 +19,6 @@ export default function ViewUser() {
                 <li className="list-group-item">
                   <b>Email:</b>
                 </li>
-                <li className="list-group-item">
-                  <b>Phone:</b>
-                </li>
-                <li className="list-group-item">
-                  <b>Website:</b>
-                </li>
               </ul>
             </div>
           </div>
