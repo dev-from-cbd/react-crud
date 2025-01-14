@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ViewUser() {
   return (
@@ -22,6 +23,9 @@ export default function ViewUser() {
               </ul>
             </div>
           </div>
+          <Link to="/" className="btn btn-primary my-2">
+            Link
+          </Link>
         </div>
       </div>
     </div>
