@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function ViewUser() {
+  const [user, setUser] = useState({});
   return (
     <div className="container">
       <div className="row">
