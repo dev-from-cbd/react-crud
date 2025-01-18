@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 
 export default function ViewUser() {
   const [user, setUser] = useState({
-    name: "",
-    username: "",
-    email: "",
+    name: "John Doe",
+    username: "johndoe",
+    email: "john.doe@example.com",
   });
+
   return (
     <div className="container">
       <div className="row">
@@ -17,13 +18,13 @@ export default function ViewUser() {
               Details of User ID:
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  <b>Name:</b>
+                  <b>Name:</b> {user.name}
                 </li>
                 <li className="list-group-item">
-                  <b>Username:</b>
+                  <b>Username:</b> {user.username}
                 </li>
                 <li className="list-group-item">
-                  <b>Email:</b>
+                  <b>Email:</b> {user.email}
                 </li>
               </ul>
             </div>
