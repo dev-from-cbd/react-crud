@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 
 export default function ViewUser() {
   const [user, setUser] = useState({
@@ -9,6 +9,8 @@ export default function ViewUser() {
   });
 
   const { id } = useParams();
+
+  useEffect(() => {}, []);
 
   return (
     <div className="container">
