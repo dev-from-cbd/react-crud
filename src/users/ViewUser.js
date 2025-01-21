@@ -12,6 +12,8 @@ export default function ViewUser() {
 
   useEffect(() => {}, []);
 
+  const loadUser = async () => {};
+
   return (
     <div className="container">
       <div className="row">
