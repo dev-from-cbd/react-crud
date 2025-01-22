@@ -10,9 +10,19 @@ export default function ViewUser() {
 
   const { id } = useParams();
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    loadUser();
+  }, []);
 
-  const loadUser = async () => {};
+  const loadUser = async () => {
+    try {
+      const response = await fetch(`/api/users/${id}`);
+      const data = await response.json();
+      setUser(data);
+    } catch (error) {
+      console.error("Error loading user:", error);
+    }
+  };
 
   return (
     <div className="container">
@@ -21,16 +31,16 @@ export default function ViewUser() {
           <h2 className="text-center m-4">User Details</h2>
           <div className="card">
             <div className="card-header">
-              Details of User ID:
+              Details of User ID: {id}
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  <b>Name:</b>
+                  <b>Name:</b> {user.name}
                 </li>
                 <li className="list-group-item">
-                  <b>Username:</b>
+                  <b>Username:</b> {user.username}
                 </li>
                 <li className="list-group-item">
-                  <b>Email:</b>
+                  <b>Email:</b> {user.email}
                 </li>
               </ul>
             </div>
