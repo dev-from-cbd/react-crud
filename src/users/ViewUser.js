@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
@@ -15,13 +16,7 @@ export default function ViewUser() {
   }, []);
 
   const loadUser = async () => {
-    try {
-      const response = await fetch(`/api/users/${id}`);
-      const data = await response.json();
-      setUser(data);
-    } catch (error) {
-      console.error("Error loading user:", error);
-    }
+    const result = await axios.get(`http://localhost:8080/users/${id}`);
   };
 
   return (
@@ -34,13 +29,13 @@ export default function ViewUser() {
               Details of User ID: {id}
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  <b>Name:</b> {user.name}
+                  <b>Name:</b>
                 </li>
                 <li className="list-group-item">
-                  <b>Username:</b> {user.username}
+                  <b>Username:</b>
                 </li>
                 <li className="list-group-item">
-                  <b>Email:</b> {user.email}
+                  <b>Email:</b>
                 </li>
               </ul>
             </div>
