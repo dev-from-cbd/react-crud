@@ -16,8 +16,12 @@ export default function ViewUser() {
   }, []);
 
   const loadUser = async () => {
-    const result = await axios.get(`http://localhost:8080/users/${id}`);
-    setUser(result.data);
+    try {
+      const result = await axios.get(`http://localhost:8080/users/${id}`);
+      setUser(result.data);
+    } catch (error) {
+      console.error("Error loading user:", error);
+    }
   };
 
   return (
@@ -27,16 +31,16 @@ export default function ViewUser() {
           <h2 className="text-center m-4">User Details</h2>
           <div className="card">
             <div className="card-header">
-              Details of User ID: {id}
+              Details of User ID: {user.id || "N/A"}
               <ul className="list-group list-group-flush">
                 <li className="list-group-item">
-                  <b>Name:</b>
+                  <b>Name:</b> {user.name}
                 </li>
                 <li className="list-group-item">
-                  <b>Username:</b>
+                  <b>Username:</b> {user.username}
                 </li>
                 <li className="list-group-item">
-                  <b>Email:</b>
+                  <b>Email:</b> {user.email}
                 </li>
               </ul>
             </div>
